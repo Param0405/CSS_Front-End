@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 CSS - Color</title>
+    <!-- Internal Style -->
+    <style>
+        /* Univeral Selector */
+        *{
+            font-family: cursive;
+        }
+        /* Element Selector */
+        h1, h2{
+            color: rgb(246, 121, 54);
+        }
+
+        /* Descendant Selector */
+        #Intro p{
+            color: rgb(100, 238, 63);
+        }
+    </style>
+
+    <!-- External Style -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header><h1>Learning CSS</h1></header>
+    <main>
+        <!-- Inline Style -->
+        <div id="Intro"><p>CSS code consists of 3 parts: <span style="color: green;">Selector, Property and Value</span></p></div><hr>
+
+        <h2>Types of CSS styling</h2>
+        <ul class="List">
+            <li>Inline style</li>
+            <li>Internal style</li>
+            <li>External style</li>
+        </ul><hr>
+
+        <h2>Types of Selectors</h2>
+        <ol type="i" class="List">
+            <li>Element Selector</li>
+            <li>Universal Selector</li>
+            <li>ID Selector</li>
+            <li>Class Selector</li>
+            <li>Group Selector</li>
+            <li>Descendant Selector</li>
+        </ul>
+    </main>
+</body>
+</html>
