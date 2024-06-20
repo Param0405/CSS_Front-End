@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 1 CSS - Color</title>
+    <title>CSS</title>
     <!-- Internal Style -->
     <style>
         /* Univeral Selector */
         *{
-            font-family: cursive;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        /* Element Selector */
+        /* Element and Group Selector */
         h1, h2{
             color: rgb(246, 121, 54);
+            text-align: center;
         }
 
         /* Descendant Selector */
         #Intro p{
             color: rgb(100, 238, 63);
+            text-align: center;
         }
     </style>
 
@@ -30,22 +32,183 @@
         <!-- Inline Style -->
         <div id="Intro"><p>CSS code consists of 3 parts: <span style="color: green;">Selector, Property and Value</span></p></div><hr>
 
-        <h2>Types of CSS styling</h2>
-        <ul class="List">
-            <li>Inline style</li>
-            <li>Internal style</li>
-            <li>External style</li>
-        </ul><hr>
 
-        <h2>Types of Selectors</h2>
-        <ol type="i" class="List">
-            <li>Element Selector</li>
-            <li>Universal Selector</li>
-            <li>ID Selector</li>
-            <li>Class Selector</li>
-            <li>Group Selector</li>
-            <li>Descendant Selector</li>
-        </ul>
+        <div class="container">
+            <div class="BoxModel">
+                <h2>Types of CSS styling</h2>
+                <ul class="List">
+                    <li>Inline style</li>
+                    <li>Internal style</li>
+                    <li>External style</li>
+                </ul>
+            </div>
+    
+            <div class="BoxModel">
+                <h2>Types of Selectors</h2>
+                <ol type="i" class="List">
+                    <li>Element Selector (Name)</li>
+                    <li>Universal Selector (*)</li>
+                    <li>ID Selector (#)</li>
+                    <li>Class Selector (.)</li>
+                    <li>Group Selector</li>
+                    <li>Descendant Selector</li>
+                </ol>
+            </div>
+    
+            <div class="BoxModel">
+                <h2>Color System & Backgroud</h2>
+                <ol class="List">
+                    <li style="color: rbg(80, 153, 255);">RGB Color Model (rgb(_,_,_))</li>
+                    <li style="color: #5099FF;">HEX Color Model (#RRGGBB)</li>
+                    <li style="color: rgba(80,153,255,0.75);">Alpha Channel (rgba(_,_,_,_))</li>
+                    <li>Background image</li>
+                    <ul>
+                        <li>Background image size</li>
+                        <li>Background image position</li>
+                        <li>Background image repeatition</li>
+                    </ul>
+                    <li>Variables</li>
+                </ol>
+            </div>
+    
+            <div class="BoxModel">
+                <h2>Text Properties</h2>
+                <ol class="List">
+                    <li>Text Align</li>
+                    <li>Text Decoration</li>
+                    <ul>
+                        <li style="text-decoration: underline;">Underline</li>
+                        <li style="text-decoration: line-through;">Line through</li>
+                        <li style="text-decoration: overline;">Overline</li>
+                    </ul>
+                    <li>Text Transform</li>
+                    <ul>
+                        <li>Uppercase</li>
+                        <li>Lowercase</li>
+                        <li>Capitalize</li>
+                        <li>None</li>
+                    </ul>
+                    <li>Line Height</li>
+                    <li>Font</li>
+                    <ul>
+                        <li style="font-size: 20px;">Font Size</li>
+                        <li style="font-weight: 600;">Font Weight (100 to 900)</li>
+                        <li style="font-style: italic;">Font Style</li>
+                    </ul>
+                    <li>Font Family</li>
+                    <li>Font Icon</li>
+                </ol>
+            </div>
+    
+            <div class="BoxModel">
+                <h2>Box Model</h2>
+                <ol class="List">
+                    <li>Content</li>
+                    <li>Padding</li>
+                    <li>Border</li>
+                    <ul>
+                        <li>Border Radius</li>
+                        <li>Box-Sizing</li>
+                    </ul>
+                    <li>Margin</li>
+                </ol>
+            </div>
+    
+            <div class="BoxModel">
+                <h2>Display Property</h2>
+                <ol class="List">
+                    <li>Block</li>
+                    <li>Inline</li>
+                    <li>Inline-Block</li>
+                    <li>None</li>
+                </ol>
+            </div>
+    
+            <div class="BoxModel">
+                <h2>Relative Units</h2>
+                <ol class="List">
+                    <li>Percentage</li>
+                    <li>em & rem (Font Size)</li>
+                    <li>vh & vw</li>
+                    <li>vmin & vmax</li>
+                </ol>
+            </div>
+    
+            <div class="BoxModel">
+                <h2>Position Property</h2>
+                <ol class="List">
+                    <li>Static</li>
+                    <li>Relative</li>
+                    <li>Absolute (Out of DOM)</li>
+                    <li>Fixed (Out of DOM)</li>
+                    <li>Sticky</li>
+                </ol>
+            </div>
+    
+            <div class="BoxModel">
+                <h2>FlexBox and Media Queries</h2>
+                <ol class="List">
+                    <li>Float Property</li>
+                    <li>Flex</li>
+                    <ul>
+                        <li>Main Axis</li>
+                        <li>Cross Axis</li>
+                    </ul>
+                    <li>Flex Properties on Container</li>
+                    <ul>
+                        <li>Flex-Direction</li>
+                        <li>Flex-Wrap</li>
+                        <li>Justify-Content (Main Axis)</li>
+                        <li>Align-Items (Cross Axis)</li>
+                        <li>Align-Content</li>
+                    </ul>
+                    <li>Flex Properties on Flexitems</li>
+                    <ul>
+                        <li>Align-Self</li>
+                        <li>Flex-Shrink</li>
+                        <li>Flex-Grow</li>
+                        <li>Order</li>
+                    </ul>
+                </ol>
+            </div>
+    
+            <div class="BoxModel">
+                <h2>Grid</h2>
+                <ol class="List">
+                    <li>Grid-template-row/column (fractional unit)</li>
+                    <li>Gap</li>
+                    <li>Grid-row/column-start/end</li>
+                    <li>Justify-self/items</li>
+                    <li>Align-self/items</li>
+                    <li>Place-self/items</li>
+                    <li>Auto-fit</li>
+                    <li>MinMax</li>
+                    <li>Template areas</li>
+                </ol>
+            </div>
+
+            <div class="BoxModel">
+                <h2>Other Properties</h2>
+                <ol class="List">
+                    <li>Psuedo Classes</li>
+                    <li>Trasition Properties</li>
+                    <ul>
+                        <li>Transition-property</li>
+                        <li>Transition-duration</li>
+                        <li>Transition-timing-function</li>
+                        <li>Transition-delay</li>
+                    </ul>
+                    <li>Transform-Properties</li>
+                    <ul>
+                        <li>Rotate</li>
+                        <li>Scale</li>
+                        <li>Translate</li>
+                        <li>Skew</li>
+                    </ul>
+                    <li>Animation</li>
+                </ol>
+            </div>
+        </div>
     </main>
 </body>
 </html>
