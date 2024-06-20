@@ -1,3 +1,13 @@
 .List{
     color: rgb(80, 153, 255);
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.BoxModel{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 8px;
+}
